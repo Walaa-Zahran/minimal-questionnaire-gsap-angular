@@ -8,10 +8,11 @@ import { RouterOutlet } from '@angular/router';
 import { questionsList } from './helpers/questionsList';
 import { Question } from './models/Question';
 import { gsap } from 'gsap';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
